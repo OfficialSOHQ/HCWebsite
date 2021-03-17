@@ -109,6 +109,30 @@ a {
     max-width: 90%;
 }
 
+button {
+    background: black;
+    color: white;
+    border-style: outset;
+    border-color: black;
+    height: 40px;
+    width: 80px;
+    font-family: 'Raleway', sans-serif;
+    font: bold 12px;
+    text-shadow:none;
+    }
+
+button:hover {
+    background: white;
+    color: black;
+    border-style: outset;
+    border-color: white;
+    height: 40px;
+    width: 80px;
+    font-family: 'Raleway', sans-serif;
+    font: bold 12px;
+    text-shadow:none;
+    }
+
 .section h1, p {color: aliceblue}
 
 .ico{

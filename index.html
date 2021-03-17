@@ -4,16 +4,17 @@
         <title>HC Chocolates</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="resources/js/nav.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="resources/css/main.css">
     </head>
     <body>
         <div class="top">
-            <div class="nav-bar">
-                <a href="#home" class="nav-bar btn">HOME</a>
-                <a href="#about" class="nav-bar btn">ABOUT</a>
-                <a href="#menu" class="nav-bar btn">MENU</a>
-                <a href="#contact" class="nav-bar btn">CONTACT</a>
+            <div class="nav-bar opaque-black" id="nav-top">
+                <a href="#home" class="hc-btn">HOME</a>
+                <a href="#about" class="hc-btn">ABOUT</a>
+                <a href="#menu" class="hc-btn">MENU</a>
+                <a href="#contact" class="hc-btn">CONTACT</a>
             </div>
             <!-- TODO: Sticky navigation bar-->
         </div>
@@ -21,9 +22,9 @@
             <div class="banner-text" style="text-align: center;">
                 <h1 style="font-size: 4em;">HC Chocolates</h1>
             </div>
+            <div class="anchor" id="about"></div>
         </div>
-        
-        <div class="section" style="background-color: #A6893E;" id="about">
+        <div class="section" style="background-color: #A6893E;">
             <div class="wrapper">
                 <h1>About Us</h1>
                 <p>
@@ -31,7 +32,8 @@
                 </p>
             </div>
         </div>
-        <div class="section" style="background-color: #9D7A4C;" id="menu">
+        <div class="banner-image" style="background-image:url('resources/images/menu.jpg');min-height:30vh;" id="menu"></div>
+        <div class="section" style="background-color: #9D7A4C;">
             <div class="wrapper">
                 <h1>Menu</h1>
                 <p>
@@ -47,7 +49,8 @@
                 </p>
             </div>
         </div>
-        <div class="section" style="background-color: #987154;" id="contact">
+        <div class="banner-image" style="background-image:url('resources/images/contact.jpg');min-height:30vh;" id="contact"></div>
+        <div class="section" style="background-color: #987154;">
             <div class="wrapper">
                 <h1>Contact Us</h1>
                 <p>
@@ -59,17 +62,20 @@
                     <i class="fa fa-phone fa-fw fa-lg"></i>Phone: +00 151515<br>
                     <i class="fa fa-envelope fa-fw fa-lg"></i>Email: mail@mail.com<br>
                 </p>
-                <br>
-                <form action="https://formspree.io/f/xaylrzkr" method="post">
-                    <label for="email">Your Email</label>
-                    <input name="Email" id="email" type="email">
-                    <br><br>
-                    Message:<br> 
-                    <textarea name="Comment" rows=20 cols=50></textarea>
-                    <br><br>
-                    <button name = "Submit" id="submit" type="submit">Submit</button>
-                  </form>
-               
+                <br><br>
+                <form class="email-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylrzkr" method="post">
+                    <fieldset id="fs-frm-inputs" style="border:none;">
+                        <label for="full-name">Full Name</label><br>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required=""><br>
+                        <label for="email-address">Email Address</label><br>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""><br>
+                        <label for="message">Message</label><br>
+                        <textarea rows="5" style="width:300px;" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset> 
+                    <input type="submit" value="Submit" class='submit-form'>
+                </form>
+                <!-- TODO: Add email form here -->
             </div>
         </div>
         <div class="section" style="background-color: black;" id="socials">

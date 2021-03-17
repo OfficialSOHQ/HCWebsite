@@ -93,45 +93,25 @@ a {
 
 .email-form {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #02112e;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-}
-
-.email-form > input {
+    background-color: #fff;
     width: max-content;
-    max-width: 90%;
+    box-shadow: 0 0 30px #333;
+    font-family: 'Raleway', sans-serif;
 }
 
-button {
-    background: black;
-    color: white;
-    border-style: outset;
-    border-color: black;
-    height: 40px;
-    width: 80px;
-    font-family: 'Raleway', sans-serif;
-    font: bold 12px;
-    text-shadow:none;
-    }
+.email-form > input, #full-name, #email-address, #message {
+    outline: rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
 
-button:hover {
-    background: white;
-    color: black;
-    border-style: outset;
-    border-color: white;
-    height: 40px;
-    width: 80px;
+.submit-form {
+    margin-left: 12px;
+    background-color: white;
+    padding: 12px;
+    border: solid rgb(0,0,0) 1px;
+    box-shadow: 2px 2px 5px #333;
     font-family: 'Raleway', sans-serif;
-    font: bold 12px;
-    text-shadow:none;
-    }
+}
 
 .section h1, p {color: aliceblue}
 

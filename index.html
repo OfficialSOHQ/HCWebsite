@@ -1,70 +1,85 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    html,body{
-    overflow-x:hidden;
-    overflow-y:scroll;
-}
-
-    ul{
-        list-style-type:none;
-        margin:0;
-        padding:0;
-    }
-    li{
-        display:inline;
-        float:right;
-    }
-    li a{
-        display: block;
-        padding: 8px;
-        color:white;
-        align-items:center;
-    }
-    .nav-bar{
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    left: 0px;
-    top: 0px;
-    background: #000000;
-    }
-.HC-Chocolate-Picture{
-position: absolute;
-width: 100%;
-height: 40%;
-left: 0px;
-top: 59px;
-
-background: url('https://www.verywellfit.com/thmb/nQeaM-oHz6nWknzOPWiI2pcmmQQ=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chocolate_Cropped-5c6b6f45c9e77c00014764d6.jpg'), #000000;
-border: 1px solid #000000;
-box-sizing: border-box;
-
-}
-
-    </style>
-</head>
-<body>
-    <div class="nav-bar">
-    <ul>
-        <li><a href="#About-Me">About Me</a></li>
-        <li><a href="#contact-us">Contact Us</li>
+<html>
+    <head>
+        <title>HC Chocolates</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="resources/css/main.css">
+    </head>
+    <body>
+        <div class="top">
+            <div class="nav-bar">
+                <a href="#home" class="nav-bar btn">HOME</a>
+                <a href="#about" class="nav-bar btn">ABOUT</a>
+                <a href="#menu" class="nav-bar btn">MENU</a>
+                <a href="#contact" class="nav-bar btn">CONTACT</a>
+            </div>
+            <!-- TODO: Sticky navigation bar-->
+        </div>
+        <div class="banner-image" style="background-image:url('resources/images/splash.jpg');" id="home">
+            <div class="banner-text" style="text-align: center;">
+                <h1 style="font-size: 4em;">HC Chocolates</h1>
+            </div>
+        </div>
         
-    </ul>
-</div>
-    <div class="HC-Chocolate-Picture"></div>
-
+        <div class="section" style="background-color: #A6893E;" id="about">
+            <div class="wrapper">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel pretium leo, quis pellentesque lacus. Nam sit amet leo sit amet augue commodo dignissim in quis urna. Fusce venenatis vitae dui in luctus. Pellentesque ac ultricies nibh, ut eleifend augue. Nullam ac sem nec nibh imperdiet interdum. Praesent id ex non neque sagittis faucibus ut nec augue. Aliquam gravida vulputate purus sed luctus. Donec tortor mauris, ultrices eu varius at, viverra vestibulum libero. Quisque ante augue, gravida vel facilisis eu, dapibus eget ante. Donec vel massa blandit, facilisis magna sit amet, dignissim ex. Nullam felis orci, tincidunt a nulla a, mollis dignissim nunc. Suspendisse vehicula et ex vitae cursus. Ut nec neque in dui viverra finibus. In hac habitasse platea dictumst. Duis faucibus consequat pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent augue ipsum, ultricies a lorem ac, ornare porta nibh. Mauris dignissim convallis urna gravida malesuada. Fusce ut consequat orci. Sed convallis tristique justo, vitae finibus enim mollis non. Pellentesque ultrices eros ligula, eget efficitur arcu viverra non. Etiam ultricies justo sit amet quam tincidunt, quis sollicitudin mauris pulvinar. Donec pellentesque scelerisque magna, quis porta lacus placerat in. Nunc pharetra fermentum dui et iaculis. Duis laoreet dapibus mi, a congue quam consectetur sed. Aliquam erat volutpat. Quisque non efficitur sem, at lobortis lorem. In sed nisl mollis risus viverra molestie.
+                </p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #9D7A4C;" id="menu">
+            <div class="wrapper">
+                <h1>Menu</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis enim ullamcorper, sollicitudin dui at, euismod velit. Nam pellentesque porta nunc, at iaculis est egestas a. Phasellus pretium a nulla in consectetur. In nisi sapien, semper a nisl nec, finibus luctus nisi. Praesent velit diam, auctor et luctus id, rhoncus sed leo. Nunc lacinia auctor urna in vestibulum. Curabitur porta augue eget accumsan auctor. Suspendisse potenti. Ut cursus sem sem, id pharetra orci bibendum blandit.
+                    <br><br>
+                    Pellentesque a velit ornare, laoreet est a, tempor elit. Nulla varius eros magna, vulputate consequat metus dignissim quis. Fusce sagittis mauris at purus luctus pellentesque. Nulla vel nulla purus. Donec efficitur magna vel enim faucibus eleifend. Integer a mi pretium, auctor metus eget, semper lectus. Nullam sodales tristique felis quis porta. Fusce interdum sem eget gravida euismod. Nullam congue dolor id ligula dictum bibendum.
+                    <br><br>
+                    Sed vulputate nibh at aliquet lacinia. Pellentesque mollis, arcu a scelerisque aliquam, nisi velit varius magna, id egestas tellus leo tristique ex. Curabitur porttitor dolor sem, id lacinia sapien sollicitudin at. Aenean quis vestibulum est. Suspendisse posuere id libero eu egestas. Proin suscipit dui nec diam lacinia, ac bibendum libero porttitor. Sed ultrices, nunc ullamcorper varius ultricies, augue ex consectetur quam, ac porttitor augue sem ut turpis. Aliquam ac ipsum ante. Pellentesque gravida, est sit amet imperdiet convallis, est risus scelerisque ante, semper gravida enim ex ullamcorper tortor. Mauris tempor ac enim sed malesuada. Aenean eleifend pretium consequat. Nunc quis blandit diam, at rhoncus nibh. Pellentesque at dui justo. Fusce mollis vulputate sem in fermentum. Nulla ullamcorper dapibus metus a ullamcorper.
+                    <br><br>
+                    Suspendisse mauris nunc, porttitor vitae suscipit a, aliquam in lacus. Sed eget euismod velit, eget dapibus lacus. Nunc quis nibh luctus, dictum leo id, fringilla sapien. Vestibulum et tortor facilisis, fermentum libero eget, feugiat quam. Quisque vel justo fringilla, eleifend felis ultrices, feugiat eros. Integer ut risus metus. Quisque vel turpis tortor. Nunc porttitor viverra nulla. In imperdiet fringilla libero, in vulputate erat commodo at. Nullam at urna accumsan, viverra lorem sit amet, accumsan quam.
+                    <br><br>
+                    Aliquam mi turpis, fringilla eu urna ac, sollicitudin viverra ligula. Quisque sagittis augue vitae erat tincidunt semper. Pellentesque congue pulvinar ultricies. Etiam fermentum quis tortor ac eleifend. Sed fermentum nisl convallis ultricies vestibulum. Ut eget ante tellus. Proin mi tellus, mollis et sodales sed, elementum quis risus. Duis id metus a nibh vestibulum aliquet. Duis sed nulla tellus. Donec scelerisque fringilla dictum. Phasellus vestibulum lacus id arcu ultricies, at rutrum neque efficitur. 
+                </p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #987154;" id="contact">
+            <div class="wrapper">
+                <h1>Contact Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel pretium leo, quis pellentesque lacus. Nam sit amet leo sit amet augue commodo dignissim in quis urna. Fusce venenatis vitae dui in luctus. Pellentesque ac ultricies nibh, ut eleifend augue. Nullam ac sem nec nibh imperdiet interdum. Praesent id ex non neque sagittis faucibus ut nec augue. Aliquam gravida vulputate purus sed luctus. Donec tortor mauris, ultrices eu varius at, viverra vestibulum libero. Quisque ante augue, gravida vel facilisis eu, dapibus eget ante. Donec vel massa blandit, facilisis magna sit amet, dignissim ex. Nullam felis orci, tincidunt a nulla a, mollis dignissim nunc. Suspendisse vehicula et ex vitae cursus. Ut nec neque in dui viverra finibus. In hac habitasse platea dictumst. Duis faucibus consequat pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent augue ipsum, ultricies a lorem ac, ornare porta nibh. Mauris dignissim convallis urna gravida malesuada. Fusce ut consequat orci. Sed convallis tristique justo, vitae finibus enim mollis non. Pellentesque ultrices eros ligula, eget efficitur arcu viverra non. Etiam ultricies justo sit amet quam tincidunt, quis sollicitudin mauris pulvinar. Donec pellentesque scelerisque magna, quis porta lacus placerat in. Nunc pharetra fermentum dui et iaculis. Duis laoreet dapibus mi, a congue quam consectetur sed. Aliquam erat volutpat. Quisque non efficitur sem, at lobortis lorem. In sed nisl mollis risus viverra molestie.
+                </p>
+                <br>
+                <p>
+                    <i class="fa fa-map-marker fa-fw fa-lg"></i>New Jersey, United States<br>
+                    <i class="fa fa-phone fa-fw fa-lg"></i>Phone: +00 151515<br>
+                    <i class="fa fa-envelope fa-fw fa-lg"></i>Email: mail@mail.com<br>
+                </p>
+                <br>
+                <form action="https://formspree.io/f/xaylrzkr" method="post">
+                    <label for="email">Your Email</label>
+                    <input name="Email" id="email" type="email">
+                    <button type="submit">Submit</button>
+                  </form>
+               
+            </div>
+        </div>
+        <div class="section" style="background-color: black;" id="socials">
+            <p>
+                <!--
+                    <i class="fa fa-facebook-official fa-lg"></i>
+                    <i class="fa fa-snapchat fa-lg"></i>
+                    <i class="fa fa-pinterest-p fa-lg"></i>
+                    <i class="fa fa-twitter fa-lg"></i>
+                    <i class="fa fa-linkedin fa-lg"></i>
+                -->
+                <a class="fa fa-instagram fa-lg ico" href="https://www.instagram.com/hc.chocolates/"></a>
+                
+            </p>
+        </div>
     </body>
-</div>
-
-
-    
-    
-</body>
 </html>

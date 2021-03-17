@@ -118,6 +118,15 @@ a {
     box-shadow: 2px 2px 10px #333;
     font-family: 'Raleway', sans-serif;
 }
+.submit-form:hover {
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: solid rgb(0,0,0) 1px;
+    box-shadow: 2px 2px 10px #333;
+    font-family: 'Raleway', sans-serif;
+}
 
 .section h1, p {color: aliceblue}
 

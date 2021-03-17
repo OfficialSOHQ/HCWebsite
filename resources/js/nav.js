@@ -23,14 +23,17 @@ function rmvClass(name){
 window.onload = ()=>{
     navbar = document.getElementById("nav-top")
     sections = [document.getElementById("home"),document.getElementById("about"),document.getElementById("menu"),document.getElementById("contact")];
+    if (window.scrollY <= (sections[1].offsetTop - 61)){
+        rmvClass("opaque-black")
+    } else {
+        addClass("opaque-black")
+    }
 }
 
 window.addEventListener("scroll",(evt)=>{
-    let scrollPosition = window.scrollY;
-    console.log(scrollPosition+" <= "+(sections[1].offsetTop - 61));
-    if (scrollPosition <= (sections[1].offsetTop - 61)){
-        addClass("opaque-black")
-    } else {
+    if (window.scrollY <= (sections[1].offsetTop - 61)){
         rmvClass("opaque-black")
+    } else {
+        addClass("opaque-black")
     }
 })
